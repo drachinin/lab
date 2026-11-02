@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<transport_booking>
+  <passengers>
+    <item>
+      <id>1</id>
+      <full_name>Иван Петров</full_name>
+      <passport_number>TEST0001</passport_number>
+      <phone>+7-900-000-00-01</phone>
+      <email>ivan@example.test</email>
+    </item>
+  </passengers>
+  <carriers>
+    <item>
+      <id>1</id>
+      <name>Учебный перевозчик</name>
+      <phone>+7-900-111-11-11</phone>
+    </item>
+  </carriers>
+  <transport_types>
+    <item>
+      <id>1</id>
+      <name>Автобус</name>
+    </item>
+  </transport_types>
+  <stations>
+    <item>
+      <id>1</id>
+      <name>Центральный автовокзал</name>
+      <city>Москва</city>
+    </item>
+    <item>
+      <id>2</id>
+      <name>Автовокзал Северный</name>
+      <city>Тверь</city>
+    </item>
+  </stations>
+  <routes>
+    <item>
+      <id>1</id>
+      <departure_station_id>1</departure_station_id>
+      <arrival_station_id>2</arrival_station_id>
+      <distance_km>180.0</distance_km>
+    </item>
+  </routes>
+  <vehicles>
+    <item>
+      <id>1</id>
+      <carrier_id>1</carrier_id>
+      <transport_type_id>1</transport_type_id>
+      <vehicle_number>BUS-001</vehicle_number>
+      <seat_count>40</seat_count>
+    </item>
+  </vehicles>
+  <trips>
+    <item>
+      <id>1</id>
+      <route_id>1</route_id>
+      <vehicle_id>1</vehicle_id>
+      <departure_time>2026-11-10 09:00</departure_time>
+      <arrival_time>2026-11-10 12:00</arrival_time>
+      <base_price>850.0</base_price>
+      <status>Запланирован</status>
+    </item>
+  </trips>
+  <seats>
+    <item>
+      <id>1</id>
+      <vehicle_id>1</vehicle_id>
+      <seat_number>12A</seat_number>
+      <seat_class>Стандарт</seat_class>
+    </item>
+  </seats>
+  <bookings>
+    <item>
+      <id>1</id>
+      <passenger_id>1</passenger_id>
+      <trip_id>1</trip_id>
+      <seat_id>1</seat_id>
+      <booking_date>2026-11-02</booking_date>
+      <status>Забронирован</status>
+    </item>
+  </bookings>
+  <tickets>
+    <item>
+      <id>1</id>
+      <booking_id>1</booking_id>
+      <ticket_number>TKT-000001</ticket_number>
+      <price>850.0</price>
+      <issued_at>2026-11-02 18:00</issued_at>
+    </item>
+  </tickets>
+  <payments>
+    <item>
+      <id>1</id>
+      <booking_id>1</booking_id>
+      <amount>850.0</amount>
+      <payment_method>Учебный</payment_method>
+      <payment_date>2026-11-02</payment_date>
+      <status>Оплачен</status>
+    </item>
+  </payments>
+</transport_booking>
