@@ -1,0 +1,101 @@
+{
+  "passengers": [
+    {
+      "id": 1,
+      "full_name": "Иван Петров",
+      "passport_number": "TEST0001",
+      "phone": "+7-900-000-00-01",
+      "email": "ivan@example.test"
+    }
+  ],
+  "carriers": [
+    {
+      "id": 1,
+      "name": "Учебный перевозчик",
+      "phone": "+7-900-111-11-11"
+    }
+  ],
+  "transport_types": [
+    {
+      "id": 1,
+      "name": "Автобус"
+    }
+  ],
+  "stations": [
+    {
+      "id": 1,
+      "name": "Центральный автовокзал",
+      "city": "Москва"
+    },
+    {
+      "id": 2,
+      "name": "Автовокзал Северный",
+      "city": "Тверь"
+    }
+  ],
+  "routes": [
+    {
+      "id": 1,
+      "departure_station_id": 1,
+      "arrival_station_id": 2,
+      "distance_km": 180.0
+    }
+  ],
+  "vehicles": [
+    {
+      "id": 1,
+      "carrier_id": 1,
+      "transport_type_id": 1,
+      "vehicle_number": "BUS-001",
+      "seat_count": 40
+    }
+  ],
+  "trips": [
+    {
+      "id": 1,
+      "route_id": 1,
+      "vehicle_id": 1,
+      "departure_time": "2026-11-10 09:00",
+      "arrival_time": "2026-11-10 12:00",
+      "base_price": 850.0,
+      "status": "Запланирован"
+    }
+  ],
+  "seats": [
+    {
+      "id": 1,
+      "vehicle_id": 1,
+      "seat_number": "12A",
+      "seat_class": "Стандарт"
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "passenger_id": 1,
+      "trip_id": 1,
+      "seat_id": 1,
+      "booking_date": "2026-11-02",
+      "status": "Забронирован"
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1,
+      "booking_id": 1,
+      "ticket_number": "TKT-000001",
+      "price": 850.0,
+      "issued_at": "2026-11-02 18:00"
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "booking_id": 1,
+      "amount": 850.0,
+      "payment_method": "Учебный",
+      "payment_date": "2026-11-02",
+      "status": "Оплачен"
+    }
+  ]
+}
